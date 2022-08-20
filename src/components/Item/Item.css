@@ -1,0 +1,50 @@
+.item {
+  width: 45%;
+  height: 200px;
+  margin: 20px;
+  background-color: rgb(235, 235, 245, 0.25);
+  border-radius: 10px;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.item__text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.item__text p{
+  margin-bottom: 40px;
+}
+
+.item__img {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(44, 47, 72, 0.15);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.item__img img {
+  object-fit: contain;
+  width: 150px;
+  height: 150px;
+}
+
+.item:hover img {
+  animation: moving 1s ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moving {
+  0% {
+    transform: scale(100%);
+  }
+  100% {
+    transform: scale(110%);
+  }
+}

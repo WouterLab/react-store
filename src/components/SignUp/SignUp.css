@@ -1,0 +1,24 @@
+.sign {
+  height: 100%;
+}
+
+.sign__main {
+  width: 80%;
+  margin: 100px auto 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sign__main label {
+    color: white;
+}
+
+.sign__main input {
+    color: white
+}
+
+.sign__input {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

@@ -1,0 +1,23 @@
+.about {
+  height: 100%;
+}
+
+.about__main {
+  width: 80%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.about__main_info {
+  margin-right: 50px;
+}
+
+.about__main_img img {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}

@@ -1,0 +1,49 @@
+.panel {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.panel__add {
+  width: 50%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.panel__add h1 {
+  margin-bottom: 20px;
+}
+
+.panel__forms {
+  display: flex;
+  flex-direction: column;
+}
+
+.panel__forms label {
+  color: white;
+}
+
+.panel__forms input {
+  color: white
+}
+
+.panel__remove {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 100px auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel__remove li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.panel__remove li {
+  padding: 5px 0;
+  font-size: 22px;
+}

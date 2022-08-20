@@ -1,0 +1,10 @@
+.textblock {
+    margin-bottom: 30px;
+}
+
+.textblock h2 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,130 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Cheese",
+      "description": "200g cheese block",
+      "price": 10,
+      "src": "/images/cheese.png"
+    },
+    {
+      "id": 2,
+      "title": "Milk",
+      "description": "500ml milk bottle",
+      "price": 5,
+      "src": "/images/milk.png"
+    },
+    {
+      "id": 3,
+      "title": "Broccoli",
+      "description": "300g broccoli",
+      "price": 3,
+      "src": "/images/broccoli.png"
+    },
+    {
+      "id": 4,
+      "title": "Carrot",
+      "description": "1kg carrot",
+      "price": 4.5,
+      "src": "/images/carrot.png"
+    },
+    {
+      "id": 5,
+      "title": "Cucumber",
+      "description": "1kg cucumber",
+      "price": 8,
+      "src": "/images/cucumber.png"
+    },
+    {
+      "id": 6,
+      "title": "Potato",
+      "description": "1kg potato",
+      "price": 3.25,
+      "src": "/images/potato.png"
+    },
+    {
+      "id": 7,
+      "title": "Tomato",
+      "description": "1 piece tomato",
+      "price": 1.75,
+      "src": "/images/tomato.png"
+    },
+    {
+      "id": 8,
+      "title": "Biscuit",
+      "description": "5 pieces biscuit",
+      "price": 7,
+      "src": "/images/biscuit.png"
+    },
+    {
+      "id": 9,
+      "title": "Banana",
+      "description": "1 piece banana",
+      "price": 2,
+      "src": "/images/banana.png"
+    },
+    {
+      "id": 10,
+      "title": "Apple",
+      "description": "1kg apple",
+      "price": 1.75,
+      "src": "/images/apple.png"
+    },
+    {
+      "id": 11,
+      "title": "Apricot",
+      "description": "1kg apricot",
+      "price": 3,
+      "src": "/images/apricot.png"
+    },
+    {
+      "id": 12,
+      "title": "Avocado",
+      "description": "1 piece avocado",
+      "price": 4.5,
+      "src": "/images/avocado.png"
+    },
+    {
+      "id": 13,
+      "title": "Bread",
+      "description": "1 bread",
+      "price": 0.75,
+      "src": "/images/bread.png"
+    },
+    {
+      "id": 14,
+      "title": "Grapefruit",
+      "description": "1 piece grapefruit",
+      "price": 2,
+      "src": "/images/grapefruit.png"
+    },
+    {
+      "id": 15,
+      "title": "Kiwi",
+      "description": "1kg kiwi",
+      "price": 2.75,
+      "src": "/images/kiwi.png"
+    },
+    {
+      "id": 16,
+      "title": "Mango",
+      "description": "1 piece mango",
+      "price": 3.25,
+      "src": "/images/mango.png"
+    },
+    {
+      "id": 17,
+      "title": "Parmesan",
+      "description": "300g parmesan",
+      "price": 6.5,
+      "src": "/images/parmesan.png"
+    },
+    {
+      "id": 18,
+      "title": "Pistachio",
+      "description": "100g pistachio",
+      "price": 5,
+      "src": "/images/pistachio.png"
+    }
+  ]
+}
