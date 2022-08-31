@@ -48,3 +48,19 @@
     transform: scale(110%);
   }
 }
+
+
+@media (max-width: 1000px) {
+  .item {
+    width: 100%;
+  }
+  .item__img {
+    width: 100px;
+    height: 100px;
+  }
+  .item__img img {
+    object-fit: contain;
+    width: 100px;
+    height: 100px;
+  }
+}

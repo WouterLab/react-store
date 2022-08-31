@@ -12,7 +12,7 @@
 
 .home__main_text {
   margin-top: 20px;
-  width: 500px;
+  width: 40%;
 }
 
 .home__main h1 {
@@ -49,4 +49,17 @@ a {
 
 .roll-out {
   animation: rollout 0.4s;
+}
+
+@media (max-width: 700px) {
+  .home__main {
+    flex-direction: column;
+  }
+  .home__main_text {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+  .home__main_img img {
+    width: 300px;
+  }
 }

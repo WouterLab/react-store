@@ -112,3 +112,25 @@ input[type=number] {
   align-items: flex-end;
   flex-direction: column;
 }
+
+@media (max-width: 750px) {
+  .cart__item {
+    flex-direction: column;
+    height: auto;
+  }
+  .cart__item_wrap {
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+  }
+  .cart__item_wrap:first-child {
+    margin-left: 0;
+  }
+  
+  .cart__item_wrap:last-child {
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+    text-align: end;
+  }
+}
