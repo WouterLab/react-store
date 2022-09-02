@@ -5,7 +5,7 @@ import { Box, Button, Modal, TextField, Typography } from '@mui/material'
 
 const ControlPanel = (props) => {
   const { newItem } = useContext(Context)
-  const [fieldError, setFieldError] = useState(false)
+  // const [fieldError, setFieldError] = useState(false)
   const [value, changeValue] = useState({
     title: '',
     desc: '',
@@ -55,7 +55,7 @@ const ControlPanel = (props) => {
             autoComplete="off"
             name="title"
             value={value.title}
-            error={fieldError}
+            error={false}
           />
           <TextField
             sx={{ marginBottom: '20px' }}
@@ -66,7 +66,7 @@ const ControlPanel = (props) => {
             autoComplete="off"
             name="desc"
             value={value.desc}
-            error={fieldError}
+            error={false}
           />
           <TextField
             sx={{ marginBottom: '20px' }}
@@ -77,7 +77,7 @@ const ControlPanel = (props) => {
             autoComplete="off"
             name="price"
             value={value.price}
-            error={fieldError}
+            error={false}
           />
           <TextField
             sx={{ marginBottom: '20px' }}
@@ -88,7 +88,7 @@ const ControlPanel = (props) => {
             autoComplete="off"
             name="src"
             value={value.src}
-            error={fieldError}
+            error={false}
           />
           <Button
             variant="contained"
