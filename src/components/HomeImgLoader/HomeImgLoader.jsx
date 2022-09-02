@@ -1,7 +1,7 @@
 import React from 'react'
-import './ItemLoader.css'
+import './HomeImgLoader.css'
 
-const HomeImgLoader = (props) => {
+const HomeImgLoader = () => {
   return (
     <span className='home_skeleton'></span>
   )

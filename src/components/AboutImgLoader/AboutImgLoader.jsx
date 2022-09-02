@@ -1,7 +1,7 @@
 import React from 'react'
-import './ItemLoader.css'
+import './AboutImgLoader.css'
 
-const AboutImgLoader = (props) => {
+const AboutImgLoader = () => {
   return (
     <span className='about_skeleton'></span>
   )
