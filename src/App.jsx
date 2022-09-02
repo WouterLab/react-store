@@ -14,21 +14,34 @@ function App() {
   const [orders, setOrders] = useState([]);
   const [data, setData] = useState([]);
   const [signed, isSigned] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  const stopLoading = () => {
+    setLoading(false);
+  };
 
   const removeItem = (id) => {
-    setData(data.filter((item) => item.id !== id))
-  }
-  
+    setData(data.filter((item) => item.id !== id));
+  };
+
   const checkData = (login, password) => {
-    if (login === 'Admin' && password === 'Admin') isSigned(true)
-    else isSigned(false)
-  }
+    if (login === "Admin" && password === "Admin") isSigned(true);
+    else isSigned(false);
+  };
+
+  // useEffect(() => {
+  //   fetch("http://localhost:5000/data")
+  //     .then((response) => response.json())
+  //     .then((actualData) => setData(actualData));
+  // }, []);
 
   useEffect(() => {
-    fetch("http://localhost:5000/data")
-      .then((response) => response.json())
-      .then((actualData) => setData(actualData))
-  }, []);  
+    fetch("https://630cf8f953a833c534399e7e.mockapi.io/api/db/store_products")
+      .then((res) => res.json())
+      .then((json) => json[0].data)
+      .then((actualData) => setData(actualData));
+    stopLoading();
+  }, []);
 
   const addOrder = (item) => {
     const isInArray = orders.find((el) => el.id === item.id);
@@ -58,14 +71,12 @@ function App() {
     }
   };
 
-  
-
   const newItem = (item) => {
-    setData(current => [...current, item])
-  }
+    setData((current) => [...current, item]);
+  };
 
   return (
-    <Context.Provider value={{newItem}}>
+    <Context.Provider value={{ newItem }}>
       <div className="App">
         <Header count={orders.length} />
         <Routes>
@@ -73,7 +84,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route
             path="/products"
-            element={<Products onAdd={addOrder} data={data} />}
+            element={
+              <Products loading={loading} onAdd={addOrder} data={data} />
+            }
           />
           <Route
             path="/cart"
@@ -86,7 +99,17 @@ function App() {
               />
             }
           />
-          <Route path="/admin" element={<AdminPage removeItem={removeItem} data={data} signed={signed} checkData={checkData} />} />
+          <Route
+            path="/admin"
+            element={
+              <AdminPage
+                removeItem={removeItem}
+                data={data}
+                signed={signed}
+                checkData={checkData}
+              />
+            }
+          />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>
