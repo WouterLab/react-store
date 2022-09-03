@@ -17,7 +17,9 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   const stopLoading = () => {
-    setLoading(false);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
   };
 
   const removeItem = (id) => {
@@ -39,8 +41,8 @@ function App() {
     fetch("https://630cf8f953a833c534399e7e.mockapi.io/api/db/store_products")
       .then((res) => res.json())
       .then((json) => json[0].data)
-      .then((actualData) => setData(actualData));
-    stopLoading();
+      .then((actualData) => setData(actualData))
+      .then(() => stopLoading());
   }, []);
 
   const addOrder = (item) => {
@@ -85,7 +87,12 @@ function App() {
           <Route
             path="/products"
             element={
-              <Products loading={loading} onAdd={addOrder} data={data} />
+              <Products
+                loading={loading}
+                stopLoading={stopLoading}
+                onAdd={addOrder}
+                data={data}
+              />
             }
           />
           <Route

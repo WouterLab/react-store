@@ -7,15 +7,11 @@ import { Link } from "react-router-dom";
 const Item = lazy(() => import("../../components/Item/Item"));
 
 const Products = (props) => {
-  const [loading, setLoading] = useState(true);
   const [items, getItems] = useState([]);
 
   useEffect(() => {
     getItems(props.data);
-    setTimeout(() => {
-      setLoading(props.loading);
-    }, 1000);
-  }, [props.data, props.loading]);
+  }, [props.data]);
 
   return (
     <div className="products roll-out" key="products">
@@ -25,14 +21,14 @@ const Products = (props) => {
           <p>Take a look at our products</p>
         </div>
         <div className="products__list">
-          {loading && (
+          {props.loading && (
             <Loader
               sx={{
                 color: "#6791f3",
               }}
             />
           )}
-          {loading
+          {props.loading
             ? null
             : items.map((item) => {
                 return (
@@ -51,7 +47,7 @@ const Products = (props) => {
                   </Suspense>
                 );
               })}
-          {loading ? null : (
+          {props.loading ? null : (
             <div className="editlink">
               <Link to="/admin">
                 <Button

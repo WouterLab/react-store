@@ -1,14 +1,11 @@
 .home_skeleton {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   position: relative;
   overflow: hidden;
   background-color: rgb(235, 235, 245, 0.25);
-  width: 350px;
-  height: 233.516px;
-  border-radius: 50px;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  height: 350px;
+  box-shadow: 0px 1px 20px rgb(0 0 0 / 50%);
+  border-radius: 10px;
 }
 
 .home_skeleton::after {
